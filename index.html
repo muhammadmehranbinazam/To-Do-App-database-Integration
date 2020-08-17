@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO APP</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBNA9J_bCNKe5VmnDM1wKBBLxUTqlTxbIM",
+    authDomain: "to-do-app-4f3e5.firebaseapp.com",
+    databaseURL: "https://to-do-app-4f3e5.firebaseio.com",
+    projectId: "to-do-app-4f3e5",
+    storageBucket: "to-do-app-4f3e5.appspot.com",
+    messagingSenderId: "114832174402",
+    appId: "1:114832174402:web:b0501377f1b749baf76cdb",
+    measurementId: "G-H6GQ4GJ4C5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+        <script src="JS/app.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+        <meta charset="UTF-8">
+        <meta name="description" content="To Do App">
+        <meta name="keywords" content="todo app,to do app,app">
+        <meta name="author" content="Muhammad Mehran Bin Azam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--header-->
+        
+    <header>
+        
+        <input type="text" id="item" placeholder="Whats plan today?" />
+        <button id="addItem">
+            <!--add icon-->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"> <g> <path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/> </g> </svg>
+        </button>
+    </header>
+
+    <!--items-->
+    <div class="container">
+        <!--incomplete task-->
+        <ul class="todo" id="todo"></ul>
+
+        <!--complete task-->
+
+        <ul class="todo" id="completed"></ul>
+    </div>
+    </body>
+</html>
